@@ -8,6 +8,10 @@ Sustainable Computing • Carbon Awareness • Eco-Friendly Technology
 Green AI Dashboard is a modern, interactive sustainability platform designed to promote green computing, carbon-neutral technology, and energy awareness.
 With a sleek, animated UI, floating 3D leaves, and real-time charts, this dashboard simplifies carbon tracking and empowers users to make eco-friendly choices in the world of tech.
 
+<p align="center">
+  <img src="logo green.jpg" width="450" alt="Food Logo" />
+</p>
+
  ## Key Features
  
  ### 1. PC Carbon Footprint Calculator
