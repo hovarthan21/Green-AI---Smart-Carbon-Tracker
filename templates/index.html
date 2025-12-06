@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🌿 GREEN AI</h1>
+    <p>Carbon Awareness • Green Computing • Eco Friendly Tech</p>
+</div>
+
+<div class="tabs">
+    <button onclick="showTab('pc')">PC Calculator</button>
+    <button onclick="showTab('ai')">AI Checker</button>
+    <button onclick="showTab('web')">Website Carbon</button>
+    <button onclick="showTab('bot')">Green Bot</button>
+    <button onclick="showTab('charts')">Carbon Charts</button>
+</div>
+
+<div class="content" id="pc">
+    <h2>💻 PC Carbon Calculator</h2>
+
+    <div class="pc-input-wrapper">
+        <input id="power" placeholder="Laptop Power (W)">
+        <input id="hours" placeholder="Hours per Day">
+    </div>
+
+    <button onclick="pcCarbon()">Calculate</button>
+    <div id="pc-result"></div>
+</div>
+
+<div class="content" id="ai" style="display:none;">
+    <h2>🤖 AI Model Energy Checker</h2>
+    <select id="model">
+        <option>Logistic Regression</option>
+        <option>Random Forest</option>
+        <option>Small Neural Network</option>
+        <option>Large Neural Network</option>
+    </select>
+    <button onclick="aiEnergy()">Check</button>
+    <div id="ai-result"></div>
+</div>
+
+<div class="content" id="web" style="display:none;">
+    <h2>🌍 Website Carbon Checker</h2>
+    <input id="url" placeholder="Enter Website URL">
+    <button onclick="webCarbon()">Check</button>
+    <div id="web-result"></div>
+</div>
+
+<div class="content" id="bot" style="display:none;">
+    <h2>⏳ Green Reminder Bot</h2>
+    <p>Alerts every hour to save electricity.</p>
+    <button onclick="startBot()">Start Bot</button>
+    <div id="bot-result"></div>
+</div>
+
+<div class="content" id="charts" style="display:none;">
+    <h2>📊 Carbon Emission Visual Charts</h2>
+
+    <select id="chartType" onchange="renderCharts()">
+        <option value="line">Line Chart</option>
+        <option value="bar">Bar Chart</option>
+    </select>
+
+    <canvas id="carbonChart" width="500" height="300"></canvas>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
