@@ -7,9 +7,6 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-# -------------------------
-# 1. PC Carbon Calculator
-# -------------------------
 @app.route("/pc-carbon", methods=["POST"])
 def pc_carbon():
     power = float(request.form["power"])
@@ -27,9 +24,6 @@ def pc_carbon():
         "monthly_co2": round(monthly_co2, 2)
     })
 
-# -------------------------
-# 2. AI Model Energy Checker
-# -------------------------
 @app.route("/ai-model", methods=["POST"])
 def ai_model():
     model = request.form["model"]
@@ -47,9 +41,6 @@ def ai_model():
         "co2": round(co2, 2)
     })
 
-# -------------------------
-# 3. Website Carbon Checker
-# -------------------------
 @app.route("/website-carbon", methods=["POST"])
 def website_carbon():
     url = request.form["url"]
@@ -68,3 +59,4 @@ def website_carbon():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
