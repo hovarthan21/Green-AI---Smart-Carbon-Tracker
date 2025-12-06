@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(135deg, #0f5132, #145a41, #1e6f4e);
+    font-family: Poppins, sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #baffc9;
+    text-shadow: 0 0 15px #00ff88;
+}
+
+.tabs button {
+    background: #baffc9;
+    border: none;
+    padding: 12px 22px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+#carbonChart {
+    margin-top: 20px;
+}
+
+
+.tabs button:hover {
+    background: #19ff8c;
+    transform: scale(1.1);
+}
+
+.content {
+    margin-top: 40px;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px #00ff99;
+}
+
+input, select {
+    width: 70%;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+button {
+    background: #00ff99;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.15);
+    background: #00ffaa;
+}
+
+.leaf, .leaf2 {
+    position: absolute;
+    width: 130px;
+    opacity: 0.8;
+    animation: float 6s ease-in-out infinite;
+}
+
+.leaf {
+    top: 5%;
+    left: 5%;
+}
+
+.leaf2 {
+    top: 70%;
+    right: 5%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(40px) rotate(20deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+#pc-result,
+#ai-result,
+#web-result,
+#bot-result {
+    margin-top: 22px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 0 12px #00ff99;
+    display: inline-block;
+    width: 80%;
+}
+
+.cds--axis-label,
+.cds--ticks text {
+    fill: #ffffff !important;
+}
+
+.cds--label,
+.cds--title,
+.cds--legend-item text {
+    fill: #ffffff !important;
+}
+
+.cds--tooltip {
+    background: #000 !important;
+    color: #fff !important;
+    border: 1px solid #00ff99 !important;
+}
+
+.cds--chart g path,
+.cds--chart g rect,
+.cds--chart g circle {
+    stroke: #00ff99 !important;
+    fill: #00ff99 !important;
+}
