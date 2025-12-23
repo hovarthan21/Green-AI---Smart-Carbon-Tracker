@@ -12,6 +12,14 @@ With a sleek, animated UI, floating 3D leaves, and real-time charts, this dashbo
   <img src="logo green.jpg" width="450" alt="Food Logo" />
 </p>
 
+---
+
+## Sample Video
+
+[▶ Green AI ](https://drive.google.com/file/d/1ssYMaD1TZt4HC-xIxrVJ7gm2mZH5jZnW/view?usp=sharing)
+
+---
+
  ## Key Features
  
  ### 1. PC Carbon Footprint Calculator
